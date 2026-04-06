@@ -5,12 +5,12 @@
 class K8sPodsViewer < Formula
   desc "Terminal UI for watching live pod CPU and memory usage in Kubernetes"
   homepage "https://github.com/lavluda/k8s-pods-viewer"
-  version "1.0.2"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
-    url "https://github.com/lavluda/k8s-pods-viewer/releases/download/v1.0.2/k8s-pods-viewer_Darwin_all.tar.gz"
-    sha256 "daa0bdce98575620c465f290f87665094e4d99a276d2d172e23ac58d0ed9d1f8"
+    url "https://github.com/lavluda/k8s-pods-viewer/releases/download/v1.1.0/k8s-pods-viewer_Darwin_all.tar.gz"
+    sha256 "9a98a0f2ea5f56377e1dc89c5bd72cabea75db3976fb1613626912f37aefcaaa"
 
     define_method(:install) do
       bin.install "k8s-pods-viewer"
@@ -19,15 +19,15 @@ class K8sPodsViewer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lavluda/k8s-pods-viewer/releases/download/v1.0.2/k8s-pods-viewer_Linux_x86_64.tar.gz"
-      sha256 "9cbf905a97ac31820bc015a44a46ce5bb7e44ba1a39be4cf1898cf402b436fb4"
+      url "https://github.com/lavluda/k8s-pods-viewer/releases/download/v1.1.0/k8s-pods-viewer_Linux_x86_64.tar.gz"
+      sha256 "c4e9bf8e51e003c1ab036aed8177fbbf7865f3218c6b97a61ca9bf446a142165"
       define_method(:install) do
         bin.install "k8s-pods-viewer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lavluda/k8s-pods-viewer/releases/download/v1.0.2/k8s-pods-viewer_Linux_arm64.tar.gz"
-      sha256 "5f51f9f83e9727d6cc0c91a99224852827c2b22ef29c1f2a5ae174d9dbcb34d4"
+      url "https://github.com/lavluda/k8s-pods-viewer/releases/download/v1.1.0/k8s-pods-viewer_Linux_arm64.tar.gz"
+      sha256 "7bef18dc7f260aa043c8bc62ffcd8dc5b5104ce0a86a6af6e685b0fbde195464"
       define_method(:install) do
         bin.install "k8s-pods-viewer"
       end
