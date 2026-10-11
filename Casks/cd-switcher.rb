@@ -1,6 +1,6 @@
 cask "cd-switcher" do
-  version "0.1.2"
-  sha256 "10d00208973455922312ad09e4b5fd9638d31959bef66312d6836dc6f03e1488"
+  version "0.1.3"
+  sha256 "c044f91d5ffd01bf7cebf18cac70db932b82aef58be671410a1f461ed06ae3f9"
 
   url "https://github.com/lavluda/cd-switcher/releases/download/v#{version}/cd-switcher-darwin-universal.dmg"
   name "CD-Switcher"
